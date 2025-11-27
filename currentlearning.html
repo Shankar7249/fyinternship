@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+<script type="text/javascript">
+
+window.onload = function () {
+	var chart = new CanvasJS.Chart("chartContainer", {
+		title:{
+			text: "Currently Learning"              
+		},
+		data: [              
+		{
+			// Change type to "doughnut", "line", "splineArea", etc.
+			type: "column",
+			dataPoints: [
+				{ label: "java",  y: 10  },
+				{ label: "content writing", y: 15  },
+				{ label: "GitHub", y: 25  },
+				{ label: "html,css",  y: 30  },
+				{ label: "c language",  y: 28  }
+			]
+		}
+		]
+	});
+	chart.render();
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<p>vibe coding - </p> <a href="https://macrocaloriecalculator.netlify.app/"><button>Calorie Calculator website</button></a>
+<br><br>
+<center><img src="S3.png" alt=""></center>
+
+<br><br>
+<center><img src="S2.png" alt=""></center>
+</body>
+</html>
